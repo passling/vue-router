@@ -13,7 +13,7 @@
             <label for="radio">Age</label>
 
           </div>
-          <button @click="subForm()">提交</button>
+          <button @click="subForm()" type="button">提交</button>
         </fieldset>
 
       </form>

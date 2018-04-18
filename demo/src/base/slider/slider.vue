@@ -22,11 +22,15 @@
           autoplay:true,
           loop:true,
           speed:400,
+          direction: 'horizontal',
+          grabCursor: true,
+          setWrapperSize: true,
+          autoHeight: true,
           pagination: {
             el: '.swiper-pagination'
           }
         },
-        swiperSlides: ['http://img.zcool.cn/community/017b2a5938c8bca8012193a37db72c.jpg@2o.jpg','http://img.zcool.cn/community/0190f9591d445eb5b3086ed4a73742.jpg@1280w_1l_2o_100sh.webp','http://img.zcool.cn/community/01862f591d4460a801216a3e2f2468.jpg@1280w_1l_2o_100sh.webp','http://img.zcool.cn/community/01c7d2591d445fa801216a3efb2271.jpg@1280w_1l_2o_100sh.jpg','http://img.zcool.cn/community/01ca21591d4466a801216a3e874555.jpg@1280w_1l_2o_100sh.jpg']
+        swiperSlides: ['http://img.zcool.cn/community/017b2a5938c8bca8012193a37db72c.jpg@2o.jpg','http://img.zcool.cn/community/01c7d2591d445fa801216a3efb2271.jpg@1280w_1l_2o_100sh.jpg','http://img.zcool.cn/community/01ca21591d4466a801216a3e874555.jpg@1280w_1l_2o_100sh.jpg']
       }
     },
     computed: {
