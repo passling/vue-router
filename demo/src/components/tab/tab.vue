@@ -12,7 +12,7 @@
         <span class="find-icon icon"></span><br>
         <span>发现</span>
       </router-link>
-      <router-link tag="div" class="tab-item" to="account">
+      <router-link tag="div" class="tab-item" :to="account">
         <span class="account-icon icon"></span><br>
         <span>我的</span>
       </router-link>
@@ -20,8 +20,23 @@
 </template>
 
 <script>
+  import {mapGetters} from 'vuex'
     export default {
-        name: "tab"
+        name: "tab",
+        data(){
+          return {
+            // account:String
+          }
+        },
+        computed: {
+          account() {
+            return this.sesstion ? 'account' : 'login'
+          },
+          ...mapGetters([
+            'sesstion'
+          ])
+        },
+
     }
 </script>
 

@@ -1,10 +1,13 @@
 <template>
-    <div>投资</div>
+    <div>
+      这是什么
+      <router-view></router-view>
+    </div>
 </template>
 
 <script>
     export default {
-        name: "invest"
+        name: "invest",
     }
 </script>
 
