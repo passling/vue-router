@@ -164,6 +164,7 @@
   }
   .pay-type {
     width: 100%;
+    box-sizing: border-box;
     padding:15px;
     background: #F9F9F9;
     border-top:1px solid #DDDEE3;

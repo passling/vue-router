@@ -30,7 +30,7 @@
         },
         computed: {
           account() {
-            console.log(this.sesstion)
+            // console.log(this.sesstion)
             return this.sesstion ? 'account' : 'login'
           },
           ...mapGetters([
@@ -52,10 +52,14 @@
     font-size: 16px;
     padding:5px 0;
     color:#8E8E93;
+    z-index: 999;
   }
   .tab-item{
     flex: 1;
     text-align: center;
+  }
+  .tab-item span{
+    cursor: pointer;
   }
   .icon{
     display: inline-block;

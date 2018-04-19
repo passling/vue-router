@@ -19,17 +19,34 @@
           <p>商品管理</p>
         </a>
       </div>
+      <div class="group clean" @click="cleanSesstion()">
+        <a href="javascript:void(0)">
+          <div><img src="../../common/img/goods_manager@2x.png" alt="商品"></div>
+          <p>退出登录</p>
+        </a>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-  import {mapGetters} from 'vuex'
+  import {mapGetters,mapActions} from 'vuex'
     export default {
         name: "account",
         computed:{
           ...mapGetters([
             'sesstion'
+          ])
+        },
+        methods:{
+          cleanSesstion(){
+            this.setSesstion(false);
+            localStorage.removeItem('site');
+            this.$router.push('/login')
+
+          },
+          ...mapActions([
+            'setSesstion'
           ])
         },
         created(){

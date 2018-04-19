@@ -34,11 +34,10 @@
         methods:{
           subForm(){
             const _this=this
-            console.log(this.name1,this.age);
               axios.post('https://www.wateroot.com/http/send', {
                 url: 'http://www.baidu.com'
               }).then(function (res) {
-                console.log('成功了')
+                // console.log('成功了')
                 localStorage.setItem("site", "value");
                 _this.setSesstion(true);
                 _this.$router.push('/account')
