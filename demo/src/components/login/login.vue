@@ -39,7 +39,7 @@
                 url: 'http://www.baidu.com'
               }).then(function (res) {
                 console.log('成功了')
-                sessionStorage.setItem("site", "value");
+                localStorage.setItem("site", "value");
                 _this.setSesstion(true);
                 _this.$router.push('/account')
               }).catch(function(err){

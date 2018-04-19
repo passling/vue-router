@@ -30,6 +30,7 @@
         },
         computed: {
           account() {
+            console.log(this.sesstion)
             return this.sesstion ? 'account' : 'login'
           },
           ...mapGetters([

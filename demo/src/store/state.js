@@ -7,7 +7,7 @@
     var logins=true
   }
 
-
+console.log(logins+'1')
 const state = {
   sesstion: logins
 }
